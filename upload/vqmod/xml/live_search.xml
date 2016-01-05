@@ -90,7 +90,7 @@
                         <add><![CDATA[
 							<script>
 								$(function(){
-									var i = (!!$("#livesearch").length ? $("#livesearch") : $("<ul id='livesearch'></ul>") ), s = $("#header [name=search]");
+									var i = (!!$("#livesearch").length ? $("#livesearch") : $("<ul id='livesearch'></ul>") ), s = $("header [name=search]");
 									function repositionLivesearch() { i.css({ top: (s.offset().top+s.outerHeight()), left:s.offset().left, width: s.outerWidth() }); }
 									$(window).resize(function(){ repositionLivesearch(); });
 									s.keyup(function(e){
